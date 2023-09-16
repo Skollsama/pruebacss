@@ -1,0 +1,682 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  width: 100%;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+main {
+  display: block;
+  margin-top: 15%;
+  font-family: "Lato", sans-serif;
+}
+
+.btn-whatsapp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.btn-whatsapp {
+  text-decoration: none;
+}
+/* Style the header with a grey background and some padding */
+.header {
+  display: flex;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 10px 5px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a.logo img {
+  height: 150px;
+  width: 300px;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: #402100;
+  color: white;
+  font-weight: 300;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+h1 {
+  font-family: "Sansita", sans-serif;
+}
+
+h1 span {
+  color: #ff7300;
+}
+
+/*inicio nuestros productos*/
+.content-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.title-one {
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-size: 3rem;
+}
+
+.content-two p {
+  text-align: center;
+  font-family: "Sansita", sans-serif;
+  padding: 10px;
+}
+
+.details {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details-pe {
+  display: inline-table;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 60px;
+}
+
+/*Inicio del Nuestros productos*/
+.content-three {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around;
+}
+
+.content-three h2 {
+  font-family: Sansita;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 93%;
+  text-align: left;
+  letter-spacing: 0.06em;
+  color: #000000;
+  padding: 20px;
+}
+
+.content-three span {
+  color: #ff7300;
+}
+
+/*estilos para las tarjetas de los productos*/
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: center;
+}
+.container .card {
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.container .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+  width: 330px;
+  height: 220px;
+}
+
+.container .card h1 {
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.container .card p {
+  padding: 0.1rem;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 10px;
+}
+
+.container .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3498db;
+}
+
+/*Fin de los estilos de las tarjetas de los productos*/
+
+.txt-card {
+  font-family: Sansita;
+  font-style: normal;
+  font-size: 0.3rem;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.txt-card-v {
+  display: inline-flex;
+  font-family: Sansita;
+  font-style: normal;
+  font-size: 0.3rem;
+  line-height: 22px;
+  text-align: left;
+  letter-spacing: 0.05em;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-top: -10px;
+}
+
+.btn-2 {
+  background-color: #402100;
+  color: #fff;
+  font-family: Sansita;
+  font-style: normal;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  width: 139px;
+  height: 37px;
+  right: 30px;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.btn-2:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nota {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.p-3 {
+  padding: 15px;
+  font-family: Radley;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.btn-3 {
+  background-color: #402100;
+  color: #fff;
+  font-family: Sansita;
+  font-style: normal;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  width: 139px;
+  height: 37px;
+  right: 30px;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.btn-3:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+/*fin del Nuestros productos*/
+
+/*inicio contactanos*/
+
+.content-five {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.items-all {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.titulocontacto {
+  font-family: Sansita;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 93%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #000000;
+  padding: 10px;
+}
+
+.contacto {
+  display: inline-grid;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0px 0px 4px 1px rgb(0 0 0 / 25%);
+  text-align: center;
+  padding: 15px;
+  margin: 50px;
+  width: 470px;
+  height: 499px;
+}
+
+.contact-detaill {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.contact-detaill h3 {
+  font-family: Sansita;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.9rem;
+  line-height: 93%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px;
+  color: #000000;
+}
+
+.contact-detaill p {
+  margin: 8px;
+  display: inline-flex;
+  font-family: Sansita;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 30px;
+  letter-spacing: 0.165em;
+  color: #000000;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 1px;
+}
+
+/* fin contactanos*/
+
+/* Inicio redes sociales */
+
+.redsocial {
+  display: block;
+  text-align: center;
+  align-items: center;
+}
+
+/* Fin redes sociales */
+
+/*    Inicio Quienes somos      */
+
+header.somosdelifrutt {
+  background: url("../img/delifrutt-pulpas-giron.jpg");
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  padding: 0;
+  margin: 0;
+}
+
+header.somosdelifrutt .titles h1 {
+  text-align: center;
+}
+
+.menu li.active,
+.menu a.active {
+  color: #409617;
+}
+
+.content-two-qs {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.content-two-qs p {
+  margin: 8px;
+  display: inline-flex;
+  font-family: Sansita;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  line-height: 30px;
+  letter-spacing: 0.165em;
+  color: #000000;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 1px;
+  text-align: center;
+  margin: 15px 15px 15px 15px;
+}
+
+.details-pe-qs {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 60px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+
+.details-pe-qs h2 {
+  font-family: Sansita;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.9rem;
+  line-height: 93%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px;
+  color: #000000;
+  margin: 15px 15px 15px 15px;
+}
+
+.details-pe-qs p {
+  margin: 8px;
+  display: inline-flex;
+  font-family: Sansita;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 30px;
+  letter-spacing: 0.165em;
+  color: #000000;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 1px;
+  text-align: justify;
+  margin: 15px 15px 15px 15px;
+}
+
+/*banner quienes somos*/
+
+.banner-qs {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-qs img {
+  width: 100%;
+  height: 100%;
+}
+
+/*fin banner quienes somos*/
+
+#equipo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.equipotitulo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+.equipotitulo h1 {
+  font-family: Sansita;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 93%;
+  /* identical to box height, or 47px */
+
+  display: block;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px;
+  color: #000000;
+}
+
+.equipotitulo p {
+  margin: 8px;
+  display: inline-flex;
+  font-family: Sansita;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 30px;
+  letter-spacing: 0.165em;
+  color: #000000;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 1px;
+  text-align: justify;
+  margin: 15px 15px 15px 15px;
+}
+
+.delifruteam {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+}
+
+.textomiembros1 {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.fotomiembros {
+  padding: 10px;
+  float: left;
+  right: 350px;
+  position: relative;
+}
+
+/*    fin Quienes somos      */
+
+/* Inicio Footer*/
+
+footer {
+  background-color: #402100;
+  max-width: 100%;
+}
+
+.f-detalles {
+  display: block;
+  padding: 20px;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 10px;
+  text-align: -webkit-center;
+}
+
+.f-detalles p,
+img {
+  padding: 0;
+  margin: 0;
+}
+
+.f-detalles p {
+  color: #fff;
+  font-family: "Sansita", sans-serif;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+
+.dydfjhs {
+  padding: 10px;
+  background-color: #2b1601;
+  max-width: 100%;
+  text-align: center;
+}
+
+.dydfjhs p {
+  color: #fff;
+  font-family: "Sansita", sans-serif;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+.dydfjhs a {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+/*Fin Footer*/
